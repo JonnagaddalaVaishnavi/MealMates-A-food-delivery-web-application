@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* Common styles for both sign-in and sign-up pages */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.auth-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.auth-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.auth-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #45a049;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.auth-link a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.error-message {
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Sign In specific styles */
+@import url("common.css");
+
+.signin-container {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.signin-card {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.signin-btn {
+  background-color: #3498db;
+}
+
+.signin-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Sign Up specific styles */
+@import url("common.css");
+
+.signup-container {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #e0eafc 100%);
+}
+
+.signup-card {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.signup-btn {
+  background-color: #2ecc71;
+}
+
+.signup-btn:hover {
+  background-color: #27ae60;
+}
+

@@ -1,5 +1,6 @@
 package com.myfoods.model;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class User {
@@ -12,13 +13,14 @@ public class User {
 	private String address;
 	private String role;
 	private Date createdDate;
-	private Date lastLoginDate;
+	private LocalDateTime lastLoginDate;
 	
 	public User() {
 
 	}
+	
 	public User(int userId, String name, String username, String password, String email, String phone, String address,
-			String role, Date createdDate, Date lastLoginDate) {
+			String role, Date createdDate, LocalDateTime lastLoginDate2) {
 		super();
 		this.userId = userId;
 		this.name = name;
@@ -29,8 +31,9 @@ public class User {
 		this.address = address;
 		this.role = role;
 		this.createdDate = createdDate;
-		this.lastLoginDate = lastLoginDate;
+		this.lastLoginDate = lastLoginDate2;
 	}
+
 	public int getUserId() {
 		return userId;
 	}
@@ -85,11 +88,11 @@ public class User {
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
 	}
-	public Date getLastLoginDate() {
+	public LocalDateTime getLastLoginDate() {
 		return lastLoginDate;
 	}
-	public void setLastLoginDate(Date lastLoginDate) {
-		this.lastLoginDate = lastLoginDate;
+	public void setLastLoginDate(LocalDateTime now) {
+		this.lastLoginDate = now;
 	}
 	
 	
