@@ -33,30 +33,6 @@ Tap Foods is a full-stack web application designed to streamline the food delive
 ### 1. Setup MySQL Database:
 - Create a new database named `MealMates`.
 - Run the SQL script provided in the `db` folder to set up the tables.
-
-### 2. Configure Application:
-- Update the `application.properties` file in the `src/main/resources` folder with your database credentials:
-  ```properties
-  spring.datasource.url=jdbc:mysql://localhost:3306/MealMates
-  spring.datasource.username=yourUsername
-  spring.datasource.password=yourPassword
-
-MealMates/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── com/
-│   │   │   │   ├── myfoods/
-│   │   │   │   │   ├── dao/
-│   │   │   │   │   ├── daoimple/
-│   │   │   │   │   ├── model/
-│   │   │   │   │   ├── servlets/
-│   │   │   │   │   ├── testclas/
-│   │   │   │   │   ├── utility/
-│   ├── resources/
-│   ├── test/
-├── README.md
-
  
 - Feel free to adjust any of the details or sections to better fit your project. Let me know if you need further assistance!
   
