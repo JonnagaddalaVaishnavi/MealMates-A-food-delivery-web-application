@@ -15,6 +15,9 @@ Meal Mates is a full-stack web application designed to streamline the food deliv
 - **CSS3:** Styling and design.
 - **JavaScript (ES6+):** Dynamic UI interactions.
 
+## Backend :
+-**Java:**
+
 ### Database:
 - **MySQL:** Storing user, order, and menu data.
 
